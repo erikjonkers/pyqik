@@ -14,8 +14,8 @@ import serial
 class Controller:
 	def __init__(self):
 		self.debug = False
-#		self.ser = serial.Serial('/dev/ttyS0', 9600)		# default linux first serial port
-		self.ser = serial.Serial('/dev/ttyAMA0', 9600)		# Raspberry pi first serial port
+		self.ser = serial.Serial('/dev/ttyS0', 9600)		# default linux first serial port
+#		self.ser = serial.Serial('/dev/ttyAMA0', 9600)		# Raspberry pi first serial port
 		self.pololuStartByte = chr(0xAA)
 		self.deviceId = chr(0x09)
 		self.pololuProtocol = self.pololuStartByte + self.deviceId
