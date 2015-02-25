@@ -102,7 +102,7 @@ class Controller:
 		if errorByte == 8:
 			print "Data Overrun Error (serial receive buffer is full)"
 		if errorByte == 16:
-			print "Frame Error (a byte’s stop bit is not detected, This error can occur if you are communicating at a baud rate that differs from the qik’s baud rate)"
+			print "Frame Error (a bytes stop bit is not detected, This error can occur if you are communicating at a baud rate that differs from the qiks baud rate)"
 		if errorByte == 32:
 			print "CRC Error (CRC-enable jumper is in place and computed CRC failed)"
 		if errorByte == 64:
